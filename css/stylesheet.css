@@ -1,0 +1,154 @@
+/* MMDD159 - Module 10 - Response Navigation     */
+/* Extra small devices (phones, less than 600px) */
+/* No media query since this is the default CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+nav {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #666;
+    height: 40px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.navexpanded {
+    height:150px;
+}
+
+nav #menu-icon {
+    flex-basis: 50%;
+    text-align: right;
+    font-size: 28px;
+    margin-top: 0px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    text-align: center;
+}
+
+nav ul > li {
+    margin-top: 14px;
+    flex-basis: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: .5s;
+    margin: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #333;
+    background: #FFD700;
+}
+
+#logo {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 0px;
+    flex-basis: 50%;
+    text-align:left;
+}
+
+#logo a:hover {
+    background: none;
+}
+
+/* Small devices (i.e. tablets in portrait) */
+
+@media (min-width: 600px) {
+
+    nav ul {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    nav ul a {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    #logo {
+        margin-right: auto;
+    }
+
+    nav ul > li {
+        margin-top: 14px;
+        flex-basis: 100%;
+    }
+}
+/* Medium devices (i.e. tablets in landscape */
+
+@media (min-width: 900px) {
+    nav #menu-icon {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+/* Large devices (i.e. desktop) */
+
+@media (min-width: 1200px) {
+    nav {
+        overflow: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    nav ul > li a {
+        text-decoration: none;
+        color: #333;
+        transition: .5s;
+        margin: 20px;
+    }
+
+    nav ul > li {
+    margin-top: 14px;
+    flex-basis: 5%;
+}
+
+}
+/* X-Large devices (i.e. big desktop) */
+
+@media (min-width: 1800px) {}
